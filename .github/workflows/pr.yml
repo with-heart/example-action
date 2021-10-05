@@ -1,9 +1,6 @@
 name: "pr workflow"
 
 on:
-  push:
-    branches:
-      - "main"
   pull_request:
     branches:
       - "main"
@@ -26,7 +23,7 @@ jobs:
       - name: "Package action"
         run: |
           cd .github/actions/test-action
-          yarn package
+          yarn prepare
 
       - name: "Run action"
         uses: "./.github/actions/test-action"
