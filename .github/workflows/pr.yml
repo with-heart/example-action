@@ -20,11 +20,6 @@ jobs:
       - name: "Install dependencies"
         run: "yarn install --frozen-lockfile"
 
-      - name: "Package action"
-        run: |
-          cd .github/actions/test-action
-          yarn prepare
-
       - name: "Run action"
         uses: "./.github/actions/test-action"
         with:
