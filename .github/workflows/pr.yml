@@ -23,7 +23,7 @@ jobs:
       - name: "Package action"
         run: |
           cd .github/actions/test-action
-          yarn package
+          yarn prepare
 
       - name: "Run action"
         uses: "./.github/actions/test-action"
