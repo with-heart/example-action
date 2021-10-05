@@ -1,0 +1,9 @@
+name: 'test action'
+description: 'a test action'
+inputs:
+  name:
+    description: "someone's name"
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
