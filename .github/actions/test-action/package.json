@@ -1,15 +1,9 @@
 {
   "name": "test-action",
   "version": "0.0.0",
-  "main": "distindex.js",
-  "scripts": {
-    "prepare": "ncc build src/index.js -o dist"
-  },
+  "main": "index.js",
   "dependencies": {
     "@actions/core": "^1.6.0",
     "@actions/github": "^5.0.0"
-  },
-  "devDependencies": {
-    "@vercel/ncc": "^0.31.1"
   }
 }
